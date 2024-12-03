@@ -1,0 +1,362 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #ffdcf5;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo img {
+  height: 60px; /* Adjust the height as needed */
+  width: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: #fe2986;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar ul li a:hover {
+  color: #be296a;
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Hero Section with Carousel */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Carousel Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-dots .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-dots .dot.active {
+  background-color: #fff;
+}
+
+/* Hero Content */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content .btn {
+  background-color: #ffb1e6;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero-content .btn:hover {
+  background-color: #fe2986;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Services Section Title */
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* Service Subtitles with Icons */
+.service-subtitles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.service-subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.service-subtitle i {
+  font-size: 48px;
+  color: #fe2986;
+  margin-bottom: 15px;
+}
+
+.service-subtitle h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* Service Cards Container */
+.service-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual Service Card */
+.service-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+}
+
+.service-card h3 {
+  font-size: 24px;
+  margin: 15px 15px 10px 15px;
+}
+
+.service-card p {
+  font-size: 16px;
+  margin: 0 15px 15px 15px;
+}
+
+.card-btn {
+  display: block;
+  margin: 0 15px 15px 15px;
+  padding: 10px;
+  background-color: #ffb1e6;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.card-btn:hover {
+  background-color: #fe2986;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffdcf5;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-us i {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #fe2986;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #be296a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #b2dfdb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar ul li {
+      margin: 10px 0 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+      justify-content: center;
+  }
+
+  .hero h1 {
+      font-size: 32px;
+  }
+
+  .hero p {
+      font-size: 18px;
+  }
+
+  .service-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .service-card {
+      width: 90%;
+  }
+}
+
+/* Adjustments for Carousel Controls on Mobile */
+@media (max-width: 768px) {
+  .carousel-dots .dot {
+      height: 12px;
+      width: 12px;
+  }
+
+  .hero-content h1 {
+      font-size: 32px;
+  }
+
+  .hero-content p {
+      font-size: 18px;
+  }
+}
+
+
+/* Adjustments for Mobile */
+@media (max-width: 768px) {
+  .service-subtitles {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+}
