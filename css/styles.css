@@ -242,6 +242,58 @@ html {
   background-color: #fe2986;
 }
 
+/* Service Card Carousel */
+.card-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+}
+
+.card-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-slide {
+  min-width: 100%;
+}
+
+.card-slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Carousel Dots */
+.card-carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-carousel-dots .card-dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card-carousel-dots .card-dot.active {
+  background-color: #fff;
+}
+
+/* Adjustments for Service Card Content */
+.service-card h3,
+.service-card p,
+.service-card .card-btn {
+  padding: 0 15px;
+}
 /* About Us Section */
 .about-us {
   padding: 60px 20px;
@@ -337,11 +389,22 @@ footer p {
 
 /* Adjustments for Carousel Controls on Mobile */
 @media (max-width: 768px) {
-  .carousel-dots .dot {
-      height: 12px;
-      width: 12px;
+  /* Header Adjustments */
+  .header-container {
+      flex-direction: column;
+      align-items: center;
   }
 
+  .navbar ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar ul li {
+      margin: 5px 0;
+  }
+
+  /* Hero Content Adjustments */
   .hero-content h1 {
       font-size: 32px;
   }
@@ -349,14 +412,39 @@ footer p {
   .hero-content p {
       font-size: 18px;
   }
-}
 
+  .carousel-dots .dot {
+      height: 12px;
+      width: 12px;
+  }
 
-/* Adjustments for Mobile */
-@media (max-width: 768px) {
+  /* Service Subtitles Adjustments */
   .service-subtitles {
       flex-direction: column;
       align-items: center;
       gap: 20px;
+  }
+
+  /* Service Cards Adjustments */
+  .service-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .service-card {
+      width: 90%;
+  }
+
+  /* Carousel Controls in Service Cards */
+  .card-carousel-controls .card-prev,
+  .card-carousel-controls .card-next {
+      font-size: 16px;
+      padding: 6px;
+  }
+
+  /* Carousel Dots in Service Cards */
+  .card-carousel-dots .card-dot {
+      height: 8px;
+      width: 8px;
   }
 }
