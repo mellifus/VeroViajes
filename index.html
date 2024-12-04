@@ -2,16 +2,24 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tu Agencia de Viajes en Argentina</title>
+    <title>Vero Viajes</title>
     <meta name="description" content="Experimenta lo mejor de Argentina con nuestros paquetes de viaje personalizados.">
     <meta name="keywords" content="Viajes Argentina, tours personalizados, agencia de viajes, Buenos Aires, Patagonia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures mobile responsiveness -->
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Link to Font Awesome for social media icons -->
+    <!-- Font Awesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-</head>
-<body>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-mBAs6y4MppwnkKfHreucpYLOaxMDGO6fBQBCiK3wp82g/qFxZ9IDJNz7vNwXciPnZbtpF+POhHW1V4gXpL9QQg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
 
+</head>
+
+<body>
     <!-- Header -->
     <header>
       <div class="header-container">
@@ -24,14 +32,16 @@
               <ul>
                   <li><a href="#services">Destinos</a></li>
                   <li><a href="#about-us">Sobre Nosotros</a></li>
-              </ul>
+                  <li><a href="#contact">Contacto</a></li>
+                </ul>
           </nav>
       </div>
   </header>
 
     <!-- Hero Section with Carousel -->
     <section class="hero">
-      <div class="carousel">
+        <!-- Carousel -->
+        <div class="carousel">
           <div class="slides">
               <div class="slide">
                   <img src="assets/BuenosAires.jpg" alt="Paisaje de Argentina 1">
@@ -141,6 +151,31 @@
               <h3>Salta</h3>
               <a href="https://wa.me/5493888555838" class="card-btn">Organiza tu viaje</a>
           </div>
+
+          <!-- Service Card 4 -->
+          <div class="service-card">
+            <div class="card-carousel">
+                <div class="card-slides">
+                    <div class="card-slide">
+                        <img src="assets/sanpedro.jpg" alt="Asistencia de Viaje 1">
+                    </div>
+                    <div class="card-slide">
+                        <img src="assets/sanpedro2.jpg" alt="Asistencia de Viaje 2">
+                    </div>
+                    <div class="card-slide">
+                        <img src="assets/sanpedro3.jpg" alt="Asistencia de Viaje 3">
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                  <div class="card-carousel-dots">
+                  <span class="card-dot active" data-slide="0"></span>
+                  <span class="card-dot" data-slide="1"></span>
+                  <span class="card-dot" data-slide="2"></span>
+              </div>
+            </div>
+            <h3>San Pedro de Jujuy</h3>
+            <a href="https://wa.me/5493888555838" class="card-btn">Organiza tu viaje</a>
+        </div>
       </div>
     </section>
 
@@ -151,16 +186,37 @@
         <p>En Vero Viajes, conectamos diariamente San Pedro de Jujuy y Buenos Aires, ofreciendo comodidad, seguridad y puntualidad. 🚌✨</p>
     </section>
 
+    <!-- Contact Us Section with Google Maps -->
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <div class="contact-container">
+            <!-- Left Column: Map -->
+            <div class="map-container">
+                <!-- Google Maps iframe -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d454.77779698128546!2d-64.8652164!3d-24.2339999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941a58640326ba7f%3A0x863f430e630a9335!2sAv.%209%20de%20Julio%20122%2C%20Y4500AEO%20San%20Pedro%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1733330316684!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- Right Column: Contact Info and Social Icons -->
+            <div class="contact-info">
+                <p>Visítanos en nuestra oficina o contáctanos a través de nuestras redes sociales.</p>
+                <p><strong>Dirección:</strong> Av. 9 de Julio 122, San Pedro de Jujuy, Jujuy</p>
+                <p><strong>Teléfono:</strong> +54 9 11 1234 5678</p>
+                <p><strong>Email:</strong> info@tuagenciadeviajes.com</p>
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/vero22viajes/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100063639544577" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/5493888555838" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://x.com/ViajesVero86346" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
-      <div class="social-icons">
-          <a href="https://www.instagram.com/vero22viajes" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100063639544577" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://wa.me/5493888555838" target="_blank"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://x.com/ViajesVero86346" target="_blank"><i class="fab fa-twitter"></i></a>
-      </div>
       <p>&copy; 2024 - Vero Viajes</p>
     </footer>
     <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </body>
 </html>
