@@ -399,6 +399,99 @@ footer p {
   margin-bottom: 10px;
 }
 
+/* ——— Sección San Pedro ——— */
+#sanpedro {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+#sanpedro h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+#sanpedro .subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Reutiliza la grilla de servicios */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Card genérica */
+.cards-grid .card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.cards-grid .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Imagen de la card */
+.cards-grid .card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Títulos y párrafos */
+.cards-grid .card h3 {
+  font-size: 24px;
+  margin: 1rem 0 0.5rem;
+}
+.cards-grid .card p {
+  font-size: 16px;
+  margin: 0 1rem 1rem;
+  color: #444;
+}
+
+/* Botón pequeño */
+.btn-small {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffb1e6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+.btn-small:hover {
+  background-color: #fe2986;
+}
+
+#sanpedro .card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+#sanpedro .card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  #sanpedro {
+    padding: 40px 10px;
+  }
+  .cards-grid {
+    gap: 1rem;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   /* Header Adjustments */
